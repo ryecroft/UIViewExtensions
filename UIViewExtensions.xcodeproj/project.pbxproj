@@ -10,6 +10,8 @@
 		192D91501FCDB9C800430D49 /* UIViewExtensions.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 192D91461FCDB9C800430D49 /* UIViewExtensions.framework */; };
 		192D91551FCDB9C800430D49 /* UIViewExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192D91541FCDB9C800430D49 /* UIViewExtensionsTests.swift */; };
 		192D91571FCDB9C800430D49 /* UIViewExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = 192D91491FCDB9C800430D49 /* UIViewExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		192D91611FCDB9DC00430D49 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192D91601FCDB9DC00430D49 /* UIViewExtensions.swift */; };
+		192D91621FCDBF0600430D49 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192D91601FCDB9DC00430D49 /* UIViewExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,7 @@
 		192D914F1FCDB9C800430D49 /* UIViewExtensionsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UIViewExtensionsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		192D91541FCDB9C800430D49 /* UIViewExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensionsTests.swift; sourceTree = "<group>"; };
 		192D91561FCDB9C800430D49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		192D91601FCDB9DC00430D49 /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,7 @@
 			children = (
 				192D91491FCDB9C800430D49 /* UIViewExtensions.h */,
 				192D914A1FCDB9C800430D49 /* Info.plist */,
+				192D91601FCDB9DC00430D49 /* UIViewExtensions.swift */,
 			);
 			path = UIViewExtensions;
 			sourceTree = "<group>";
@@ -148,6 +152,7 @@
 				TargetAttributes = {
 					192D91451FCDB9C800430D49 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					192D914E1FCDB9C800430D49 = {
@@ -196,6 +201,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				192D91611FCDB9DC00430D49 /* UIViewExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				192D91621FCDBF0600430D49 /* UIViewExtensions.swift in Sources */,
 				192D91551FCDB9C800430D49 /* UIViewExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +341,7 @@
 		192D915B1FCDB9C800430D49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +355,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rockfax.UIViewExtensions;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +364,7 @@
 		192D915C1FCDB9C800430D49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +386,7 @@
 		192D915E1FCDB9C800430D49 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U586E8PCU9;
 				INFOPLIST_FILE = UIViewExtensionsTests/Info.plist;
@@ -390,6 +401,7 @@
 		192D915F1FCDB9C800430D49 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U586E8PCU9;
 				INFOPLIST_FILE = UIViewExtensionsTests/Info.plist;
